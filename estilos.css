@@ -46,11 +46,13 @@
 }
 
 .producto{
+    background: #f4e1a8;
+    color:#fff;
     padding: 0px;
     width: 300px;
     min-height: 370px;
     border-radius: 10px;
-    border: solid #ccc 3px;
+    border: solid #793410 2px;
     margin-bottom: 30px;
 }
 
