@@ -6,10 +6,29 @@
     <title>Hidamari - insumos</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shalimar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="header">
+        <img class="logo" src="logo.jpeg" alt="">
+    </div>
     <div id="carrusel-responsive">
         <img id="imagen-carrusel-responsive" src="" alt="">
+    </div>
+
+    <h2 class="slogan">En Hidamari te brindamos los mejores insumos para tus velas y difusores</h2>
+
+    <div id="app">
+        <ul id="productos">
+            <li class="producto" v-for="producto in productos">
+                <img :src="producto.foto">
+                <h3>{{ producto.titulo}}</h3>
+                <p v-for="precio in (producto.precios)">{{ precio }}</p>
+            </li>
+        </ul>
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
