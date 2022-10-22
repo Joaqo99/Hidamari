@@ -18,7 +18,7 @@
 
 #carrusel-responsive{
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     z-index: 1;
 }
 
@@ -46,18 +46,20 @@
 }
 
 .producto{
-    background: #f4e1a8;
+    background: #ebcb98;
     color:#fff;
     padding: 0px;
-    width: 300px;
-    min-height: 370px;
-    border-radius: 10px;
+    width: 250px;
+    min-height: 320px;
+    border-radius: 15px;
     border: solid #793410 2px;
     margin-bottom: 30px;
 }
 
 .producto img{
-    width: 100%;
-    height: 300px;
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
+    border-radius: 15px;
 }
